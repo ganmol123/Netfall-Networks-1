@@ -152,7 +152,6 @@ void udp_server(char *iface, long port)
     bzero(&server_addr, length);
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
-    ;
     server_addr.sin_port = htons(port);
 
     // bind the server with address and socket
